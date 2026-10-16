@@ -5,12 +5,25 @@ That is, delete the vendor/sense_hat.py file that is included in this bundle."""
 import time
 
 from happy import Happy
+from sad import Sad
+from angry import Angry
 
 def main():
     smiley = Happy()
     smiley.show()
     time.sleep(1)
     smiley.blink()
+    
+    smiley = Sad()
+    smiley.show()
+    time.sleep(1)
+    smiley.blink()
+    
+    smiley = Angry()
+    smiley.show()
+    time.sleep(1)
+    smiley.blink()
+
 
 if __name__ == '__main__':
     ############################################################
@@ -19,4 +32,5 @@ if __name__ == '__main__':
     # freeze_support()
     ############################################################
     main()
+
 
